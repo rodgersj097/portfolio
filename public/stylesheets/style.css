@@ -1,0 +1,331 @@
+body {
+    font: 24px 'Abel', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+
+/*Navbar*/
+
+.navbar {
+    display: flex;
+    background-color: black;
+}
+
+.navbar-logo {
+    flex: 1;
+    display: flex;
+}
+
+.navbarItem:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbarItem:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.logo {
+    padding-top: 15px;
+    transition: all 1s ease-out;
+    transform: rotate(0deg);
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.logoName:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.navbar-logo h2 {
+    padding: 16px;
+}
+
+.listOfLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 4vw 0 0;
+    overflow: hidden;
+}
+
+.navItem {
+    float: left;
+}
+
+.navItem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 38px 16px 16px 16px;
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+}
+
+
+/*SVg Strokes*/
+
+.logoPath {
+    fill: none;
+    stroke: white;
+    stroke-width: 15;
+    stroke-dasharray: 11964;
+    animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 11964;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/*Index*/
+
+.index-container {
+    background-color: black;
+    display: block;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImg img {
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.profileImg {
+    padding: 50px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.big {
+    font-size: 30px;
+}
+
+.workItem {
+    background-color: #d7d7d7;
+    padding: 5vh 15vw 5vh 15vw;
+    flex: 1;
+}
+
+.work {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.work>h2>h3 {
+    align-items: flex-start;
+}
+
+c .learnMore:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.learnMore:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.right {
+    float: right;
+    position: relative;
+    left: 20%;
+}
+
+.contact {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.info>h2 {
+    margin-top: 0;
+    padding: 0px 0px 10px 0px;
+}
+
+.info {
+    position: relative;
+    right: 5vw;
+}
+
+.tradeMark {
+    background-color: #000000;
+}
+
+.tradeMark>p {
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 50%;
+}
+
+.buttonCta {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.buttonCta:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.buttonCtaReverse {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.buttonCtaReverse:hover {
+    color: white;
+    background-color: black;
+}
+
+@media all and (max-width:30em) {
+    .buttonCta {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.email>img {
+    padding: 10px;
+}
+
+
+/*Work PAge*/
+
+.workPage {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.workPageItem>img {
+    width: 20vw;
+    height: auto
+}
+
+.workPageItem {
+    padding: 40px;
+    color: black;
+    transition: all 1s ease-out;
+}
+
+.workPageItem:hover {
+    transform: scale(1.2);
+}

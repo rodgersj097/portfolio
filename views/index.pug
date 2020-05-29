@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    .index-container
+        .profileImg.center
+            img.center(src="/images/me.jpg")
+            h1.white.center Hey, I`m Jacob.
+            p.white.center Im a Web Design and Developer based in Barrie Ontario. I create websites to increase businesses awareness online.
+    .seperator
+        div(style="height: 150px; overflow: hidden;")
+            svg(viewbox="0 0 500 150" preserveaspectratio="none" style="height: 100%; width: 100%;")
+                path(d="M0.00,49.98 C172.40,263.97 271.49,-50.00 503.10,83.38 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: black;")
+    .work
+        h2.center.big  My Work
+        h3.center Reflex Medical
+        .workItem.center
+            img.center(src="/images/reflexMonitor.webp" width="600vw" height="auto")
+        h3.center The Music Box Timmins
+        .workItem.center
+            img.center(src="/images/musicBoxMonitor.webp" width="600vw" height="auto")
+        a.learnMore.center.right(href="/work") View More...

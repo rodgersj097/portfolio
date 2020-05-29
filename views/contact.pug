@@ -1,0 +1,8 @@
+extends layout
+block content
+    h1.center Send me a message and I`ll get back to you.
+    .form
+        input(id="fullName" type="text" name="fullName" placeholder="Full Name")
+        input(id="email" type="email" name="email" placeholder="Your Email")
+        textarea(id="content" name="content", cols="30", rows="10" placeholder="Content")
+        a.buttonCtaReverse.submitButton Submit

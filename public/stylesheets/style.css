@@ -323,9 +323,21 @@ textarea {
 .workPageItem {
     padding: 40px;
     color: black;
-    transition: all 1s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .workPageItem:hover {
     transform: scale(1.2);
+}
+
+/*About me page*/
+.aboutMe{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutMe > p{ 
+    width: 50%;
 }

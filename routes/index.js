@@ -14,6 +14,9 @@ router.get('/contact', function(req, res, next) {
     res.render('contact')
 })
 
+router.get('/about', function(req,res,next){
+    res.render('about')
+})
 router.post('/email', function(req, res, next) {
     const data = {}
     data.fullName = req.body.fullName

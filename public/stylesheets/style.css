@@ -20,23 +20,6 @@ a {
     display: flex;
 }
 
-.navbarItem:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: black;
-    transition: 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.navbarItem:hover:after {
-    width: 100%;
-    left: 0;
-}
 
 .logo {
     padding-top: 15px;
@@ -97,7 +80,10 @@ a {
     padding: 38px 16px 16px 16px;
     text-decoration: none;
 }
-
+.navbarItem{ 
+    color: white;
+   
+}
 .white {
     color: white;
 }
@@ -160,6 +146,7 @@ a {
     background-color: #d7d7d7;
     padding: 5vh 15vw 5vh 15vw;
     flex: 1;
+    cursor: pointer;
 }
 
 .work {
@@ -168,26 +155,54 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+}
+h2.navbarItem{ 
+    color: black;
+}
+h2.navbarItem:after{ 
+    background-color: black !important;
+
 }
 
 .work>h2>h3 {
     align-items: flex-start;
 }
-
-c .learnMore:after {
+.learnMore{ 
+    color: black !important;
+    text-decoration: none;
+}
+ .learnMore:after {
     background: none repeat scroll 0 0 transparent;
-    bottom: 0;
+   bottom:0;
     content: "";
     display: block;
     height: 2px;
     left: 50%;
     position: absolute;
     background: black;
+    color: white;
     transition: 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
+.navbarItem:after{ 
+    background: none repeat scroll 0 0 transparent;
+     content: "";
+     display: block;
+     height: 2px;
+     left: 50%;
+     position: re;
+     background-color: white;
+     color: white;
+     transition: 0.3s ease 0s, left 0.3s ease 0s;
+     width: 0;
+}
 
-.learnMore:hover:after {
+ .learnMore:hover:after {
+    width: 100%;
+    left: 0;
+}
+.navbarItem:hover:after {
     width: 100%;
     left: 0;
 }

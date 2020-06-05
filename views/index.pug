@@ -11,11 +11,12 @@ block content
             svg(viewbox="0 0 500 150" preserveaspectratio="none" style="height: 100%; width: 100%;")
                 path(d="M0.00,49.98 C172.40,263.97 271.49,-50.00 503.10,83.38 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: black;")
     .work
-        h2.center.big  My Work
+        a(href="/work")
+            h2.center.big.navbarItem  My Work
         h3.center Reflex Medical
-        .workItem.center
+        .workItem.center(data-src="https://www.reflexmedical.net")
             img.center(src="/images/reflexMonitor.webp" width="600vw" height="auto")
         h3.center The Music Box Timmins
-        .workItem.center
+        .workItem.center(data-src="https://stores.themusicboxtimmins.com")
             img.center(src="/images/musicBoxMonitor.webp" width="600vw" height="auto")
         a.learnMore.center.right(href="/work") View More...
